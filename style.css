@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+
+}
+
+body{
+
+    width: 100vw;
+
+}
+
+header{
+
+    display: flex;
+    gap: 30px;
+    padding: 30px;
+    align-items: center;
+
+}
+
+#marioRosto{
+
+    width: 65px;
+    margin-right: 20px;
+
+}
+
+.buttomHeader{
+
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.buttomHeader:hover{
+
+    color: #ff0000;
+    transform: scale(1.1);
+
+}
+
+.buttomHeader:active{
+
+    opacity: 0.7;
+
+}
+
+#caixa-mae{
+
+    display: flex;
+    justify-content: center;
+    padding: 90px;
+    justify-content: space-around;
+
+}
+
+p{
+
+    margin-right: 130px;
+
+}
+
+.contato{
+
+    margin: 12px 0 0 0;
+    color: #fff;
+    background-color: #ff0000;
+    border: none;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+#contato:hover{
+
+    opacity: 0.8;
+
+}
+
+#contato:active{
+
+    opacity: 0.5;
+
+}
+
+
+#marioLuigi{
+
+    display: flex;
+    width: 390px;
+    height: 400px;
+
+}
+
+#logo{
+
+    width: 300px;
+
+}
+
+p{
+
+    color: #fff;
+    font-weight: bold;
+    width: 600px;
+    line-height: 1.5;
+    text-align: justify;
+
+}
+
+.caixa-video{
+
+    position: fixed;
+    top: 0;
+    z-index: -2;
+
+}
+
+video{
+
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+#whatsapp{
+
+    width: 50px;
+    position: fixed;
+    bottom: 26px;
+    right: 25px;
+
+}
+
+#fundo{
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+}
+
+.pedidos{
+
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #fff;
+    position: fixed;
+    top: 30%;
+    left: -300px;
+    padding: 35px;
+
+}
+
+input{
+
+    border-radius: 5px;
+    height: 38px;
+    outline: #ff0000;
+    font-weight: bold;
+    color: #000;
+    padding-left: 5px;
+
+}
+
+textarea{
+
+    width: 230px;
+    border-radius: 5px;
+    height: 38px;
+    outline: #ff0000;
+    font-weight: bold;
+    height: 70px;
+    color: #000;
+    padding-left: 5px;
+
+}
+
+#buttominput{
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.fundo-input{
+
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+
+} 
+
+@media (max-width: 650px) {
+
+    *{
+
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    
+    }
+
+    header {
+        width: 100%;
+        align-items: center;
+        justify-items: center;
+        gap: 15px;
+    }
+
+    #marioRosto, #marioLuigi {
+        display: none;
+    }
+
+    #home{
+
+        display: none;
+
+    }
+
+    #caixa-mae {
+        flex-direction: column;
+        padding: 30px;
+        gap: 15px;
+        text-align: center;
+    }
+
+    p {
+        max-width: 300px; 
+        text-align: justify; 
+        line-height: 1.5; 
+      }
+      
+
+    .contato {
+        width: 100%;
+        max-width: 250px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .pedidos {
+        width: 95%;
+        max-width: 280px;
+        top: 25%;
+        padding: 25px;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}

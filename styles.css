@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", serif;
+
+}
+
+body{
+
+    width: 100vw;
+
+}
+
+header {
+    display: flex;
+    background-color: aqua;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    border-radius: 10px;
+    width: 21%; 
+    height: 30px;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    margin-top: 15px;
+}
+
+.buttom-header{
+
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+
+}
+
+.buttom-header:hover {
+    color: #ff0000;
+    transform: scale(1.1);
+}
+
+.buttom-header:active{
+
+    opacity: 0.7;
+
+}
+
+#caixa-foto {
+
+    position: fixed;
+    top: 0;
+    z-index: -1;
+
+}
+
+img{
+
+    width: 100vw;
+
+}

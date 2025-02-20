@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/mario.png">
+    <link rel="stylesheet" href="./style.css">
+    <title>Mario-Bros</title>
+</head>
+
+<body>
+
+    <header>
+        <img id="marioRosto" src="./img/mario.png" alt="Mario-rosto">
+        <a id="home" class="buttomHeader">HOME</a>
+        <a href="./contatos.html" class="buttomHeader">FALE CONOSCO</a>
+        <a class="buttomHeader">NOSSOS SERVIÇOS</a>
+    </header>
+
+    <div id="caixa-mae">
+        <div>
+            <img id="logo" src="./img/logo.png" alt="Logo">
+
+            <p>Encanadores Mario & Luigi - Resolvendo Seus Problemas Hidráulicos Com Estilo!
+                Você já se encontrou em uma situação de emergência com encanamento? Vazamentos inesperados, canos
+                entupidos ou torneiras que não param de pingar? Não se preocupe, porque estamos aqui para salvar o dia!
+                Apresentamos a vocês os encanadores mais famosos do Reino dos Cogumelos - Mario e Luigi!</p>
+
+            <button onclick="pedidos()" class="contato">ENTRE EM CONTATO</button>
+        </div>
+
+        <img id="marioLuigi" src="./img/mario&luigi.png" alt="Irmãos-Mario">
+    </div>
+
+    <a href="https://wa.me/55111111111111?text=Poderiam%20me%20ajudar?">
+        <img id="whatsapp" src="./img/whatsapp.png" alt="whatsapp">
+    </a>
+
+    <div class="caixa-video">
+        <video src="./img/video.mp4" autoplay muted loop></video>
+    </div>
+
+    <div id="fundo"></div>
+
+    <div onclick="esconder()" class="fundo-input"></div>
+
+    <form class="pedidos">
+        <input placeholder="Seu Nome" type="text">
+        <input placeholder="Seu Telefone" type="text">
+        <textarea placeholder="Detalhes Do Problema"></textarea>
+        <div id="buttominput">
+            <button class="contato">Pedir Orçamento</button>
+        </div>
+    </form>
+
+    <script src="arquivo.js"></script>
+
+</body>
+</html>
